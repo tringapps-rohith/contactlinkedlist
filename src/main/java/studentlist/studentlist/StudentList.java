@@ -349,7 +349,7 @@ class StudentList
                                        res=sl.search(no);
 
                            
-                                               l.info("Your phone no is located in "+res+" position\n");
+                                               l.log(Level.INFO,()-> "Your phone no is located in "+res+" position\n");
                                        
                                        break;
                                       case 8:s.hashAdd();
