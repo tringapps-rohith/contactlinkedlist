@@ -282,7 +282,8 @@ class StudentList
                 StudentList sl=new StudentList();
                 Student data=new Student();
                 Node newNode;
-                int res,pos;
+                int res;
+		int pos;
                 l.info("\nEnter student details\n");
                 int ch;
 		String str="Enter  student details\n";
