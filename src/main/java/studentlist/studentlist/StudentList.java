@@ -274,7 +274,7 @@ class StudentList
         public static void main(String...args)
         {
                 Scanner sin=new Scanner(System.in);
-		Logger l=Logger.getLogger("com.api.jar");
+		Logger l=Logger.getLogger(COM);
 
                 Student s=new Student();
                 StudentList sl=new StudentList();
