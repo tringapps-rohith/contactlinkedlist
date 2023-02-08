@@ -57,14 +57,14 @@ class Student
        void getDetails()
         {
                 l.info("\nEnter student name\n");
-                String name=sin.next();
+                String n=sin.next();
                 l.info("Enter email id\n");;
-                String email=sin.next();
+                String e=sin.next();
                 l.info("Enter phone no\n");
-                long phno=sin.nextLong();
-                setName(name);
-                setEmail(email);
-                setPhno(phno);
+                long ph=sin.nextLong();
+                setName(n);
+                setEmail(e);
+                setPhno(p);
          
 
         }
@@ -181,9 +181,9 @@ class StudentList
                 }
                 else
                 {
-                        Node temp=root;
-                        root=root.next;
-                        temp=null;
+                        
+                       root=root.next;
+                     
                 }
                 return 1;
         }
