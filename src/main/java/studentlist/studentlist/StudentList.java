@@ -280,7 +280,7 @@ class StudentList
 
                 Student s=new Student();
                 StudentList sl=new StudentList();
-                Student data=new Student();
+              
                 Node newNode;
                 int res;
 		int pos;
