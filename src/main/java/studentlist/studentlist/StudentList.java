@@ -285,6 +285,7 @@ class StudentList
                 int res,pos;
                 l.info("\nEnter student details\n");
                 int ch;
+		String str="Enter  student details\n";
                 do
                 {
                         l.info("\n1.Insert At First\n2.Insert At Last\n3.Insert By Position\n4.Delete At First\n5.Delete At Last\n6.Delete By Pos\n7.Search By Contact No\n8.Add phno to Hash\n9.Remove phno to Hash\n10.Exit\n");
@@ -293,7 +294,7 @@ class StudentList
                         switch(ch)
                         {
                                 case 1:
-                                        l.info("Enter  student details\n");
+                                        l.info(str);
                                          newNode=new Node();
                                         newNode.dataDetails();
                                         res=sl.insertAtFirst(newNode);
@@ -302,7 +303,7 @@ class StudentList
                                                
                                         
                                         break;
-                                case 2:l.info("Enter  student details\n");
+                                case 2:l.info(str);
                                         newNode=new Node();
                                         newNode.dataDetails();
                                         res=sl.insertAtLast(newNode);
@@ -311,7 +312,7 @@ class StudentList
                                       
                                         
                                         break;
-                                case 3:l.info("Enter  student details\n");
+                                case 3:l.info(str);
                                         newNode=new Node();
                                         newNode.dataDetails();
                                         l.info("Enter the position\n");
@@ -333,7 +334,7 @@ class StudentList
                                                 sl.displayList();
                                         
                                         break;
-                                case 6:l.info("Enter the position\n");
+                                case 6:l.info("Enter the position to delete\n");
                                        pos=sin.nextInt();
                                        res=sl.deleteByPos(pos);
                                      
