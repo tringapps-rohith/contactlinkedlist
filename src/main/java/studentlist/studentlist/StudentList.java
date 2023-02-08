@@ -52,7 +52,7 @@ class Student
     {
             return getName()+" "+getEmail()+" "+getPhno();
     }
-    Hashtable<Long,String>hs=new Hashtable<>();
+    Hash<Long,String>hs=new Hashtable<>();
      Scanner sin=new Scanner(System.in);
        void getDetails()
         {
