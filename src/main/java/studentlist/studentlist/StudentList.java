@@ -8,9 +8,9 @@ import java.util.*;
 import java.util.logging.*;
 class Student
 {
-    public String name;
-    public String email;
-    public long phno;
+     String name;
+    String email;
+    long phno;
     public Student(String name,String email,long phno)
     {
             this.name=name;
