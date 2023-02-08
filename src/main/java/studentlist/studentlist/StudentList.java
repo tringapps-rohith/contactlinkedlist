@@ -58,7 +58,7 @@ class Student
         {
                 l.info("\nEnter student name\n");
                 String n=sin.next();
-                l.info("Enter email id\n");;
+                l.info("Enter email id\n");
                 String e=sin.next();
                 l.info("Enter phone no\n");
                 long ph=sin.nextLong();
