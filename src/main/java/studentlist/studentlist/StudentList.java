@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.logging.*;
 class Student
 {
+	public static final String COM="com.api.jar";
      String name;
     String email;
     long phno;
@@ -17,7 +18,7 @@ class Student
             this.email=email;
             this.phno=phno;
     }
-					Logger l=Logger.getLogger("com.api.jar");
+					Logger l=Logger.getLogger(COM);
 
     public Student()
     {
@@ -114,7 +115,7 @@ class Node
 class StudentList
 {
         Node root;
-						Logger l=Logger.getLogger("com.api.jar");
+						Logger l=Logger.getLogger(COM);
 
         int insertAtFirst(Node newNode)
         {
