@@ -93,7 +93,7 @@ class Node
 {
         Student data;
         Node next;
-						Logger l=Logger.getLogger("com.api.jar");
+						
 
         public Node(Student data,Node next)
         {
@@ -109,10 +109,7 @@ class Node
         {
                 data.getDetails();
         }
-        void display()
-        {
-                l.log(Level.INFO,()-> ""+data);
-        }
+      
 }
 class StudentList
 {
@@ -276,7 +273,7 @@ class StudentList
         public static void main(String...args)
         {
                 Scanner sin=new Scanner(System.in);
-								Logger l=Logger.getLogger("com.api.jar");
+		Logger l=Logger.getLogger("com.api.jar");
 
                 Student s=new Student();
                 StudentList sl=new StudentList();
