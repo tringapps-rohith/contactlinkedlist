@@ -64,7 +64,7 @@ class Student
                 long ph=sin.nextLong();
                 setName(n);
                 setEmail(e);
-                setPhno(p);
+                setPhno(ph);
          
 
         }
@@ -180,10 +180,8 @@ class StudentList
                         return -1;
                 }
                 else
-                {
-                        
+		{
                        root=root.next;
-                     
                 }
                 return 1;
         }
@@ -218,9 +216,9 @@ class StudentList
                 }
                 else if(pos==1)
                 {
-                        Node temp=root;
+                        
                         root=root.next;
-                        temp=null;
+                       
                 }
                 else
                 {
@@ -237,7 +235,7 @@ class StudentList
         }
         int search(long no)
         {
-                Student s;
+                
                 if(root!=null)
                 {
                         int index=1;
@@ -299,30 +297,19 @@ class StudentList
                                          newNode=new Node();
                                         newNode.dataDetails();
                                         res=sl.insertAtFirst(newNode);
-                                        if(res==1)
-                                        {
-                                                l.info("Insertion is successful\n");
+                                          l.info("Insertion is successful\n");
                                                 sl.displayList();
                                                
-                                        }
-                                        else
-                                        {
-                                                l.info("Insertion is not possible\n");
-                                        }
+                                        
                                         break;
                                 case 2:l.info("Enter  student details\n");
                                         newNode=new Node();
                                         newNode.dataDetails();
                                         res=sl.insertAtLast(newNode);
-                                        if(res==1)
-                                        {
+                                       
                                                 l.info("Insertion is successful\n");
-                                                sl.displayList();
-                                        }
-                                        else
-                                        {
-                                                l.info("Insertion is not possible\n");
-                                        }
+                                      
+                                        
                                         break;
                                 case 3:l.info("Enter  student details\n");
                                         newNode=new Node();
@@ -330,68 +317,38 @@ class StudentList
                                         l.info("Enter the position\n");
                                         pos=sin.nextInt();
                                         res=sl.insertByPos(newNode,pos);
-                                        if(res==1)
-                                        {
-                                                l.info("Insertion is successful\n");
-                                                sl.displayList();
-                                        }
-                                        else
-                                        {
+                                      
                                                 l.info("Insertion is not possible\n");
-                                        }
+                                        
                                         break;
                                 case 4: res=sl.deleteAtFirst();
-                                        if(res==-1)
-                                        {
-                                                l.info("\nDeletion is not possible\n");
-                                        }
-                                        else
-                                        {
+                                       
                                                 l.info("\nSuccessfully deleted\n");
                                                 sl.displayList();
-                                        }
+                                        
                                         break;
                                 case 5:res=sl.deleteAtLast();
-                                       if(res==-1)
-                                       {
-
-                                                l.info("\nDeletion is not possible\n");
-                                        }
-                                        else
-                                        {
+                                      
                                                 l.info("\nSuccessfully deleted\n");
                                                 sl.displayList();
-                                        }
+                                        
                                         break;
                                 case 6:l.info("Enter the position\n");
                                        pos=sin.nextInt();
                                        res=sl.deleteByPos(pos);
-                                       if(res==-1)
-                                       {
-                                               l.info("Deletion is not possible\n");
-                                       }
-                                       else
-                                       {
+                                     
+                                       
                                                l.info("Deletion is successful\n");
                                                sl.displayList();
-                                       }
+                                       
                                        break;
                                 case 7:l.info("Enter th no to search\n");
                                        long no=sin.nextLong();
                                        res=sl.search(no);
 
-                                       if(res==-1)
-                                       {
-                                               l.info("Phone no is not available\n");
-                                       }
-                                       else if(res==-2)
-                                       {
-                                               l.info("List is empty\n");;
-                                       }
-                                       else
-                                       {
+                           
                                                l.info("Your phone no is located in "+res+" position\n");
-                                       }
+                                       
                                        break;
                                       case 8:s.hashAdd();
                                                break;
